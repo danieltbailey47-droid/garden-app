@@ -1,4 +1,11 @@
 # Hardcoded values for the season and plant type
+"""Variable definition section.
+
+    Variables:
+        season- stores the current season
+
+        plant_type- stores the type of plant being planted
+"""
 season = "summer"  # TODO: Replace with input() to allow user interaction.
 plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
 
@@ -6,6 +13,9 @@ plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
 advice = ""
 
 # Determine advice based on the season
+"""Season advice section. Determines advice based on season variable.
+    Different response for each season
+"""
 if season == "summer":
     advice += "Water your plants regularly and provide some shade.\n"
 elif season == "winter":
@@ -13,6 +23,8 @@ elif season == "winter":
 else:
     advice += "No advice for this season.\n"
 
+"""Plant advice section. Determines advice based on plant_type variable.
+"""
 # Determine advice based on the plant type
 if plant_type == "flower":
     advice += "Use fertiliser to encourage blooms."
